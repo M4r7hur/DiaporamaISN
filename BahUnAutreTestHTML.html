@@ -1,12 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CSSpre.css">
-	<title>Diaporama IA</title>
-</head>
-<body>
-	<p>Paragraphe pour tester les possibilités de reveal.js</p>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-</body>
+		<title>Diaporama IA</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/montheme.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="titre">
+					<h1>L'intelligence artificielle</h1>
+					<p>Exposé sur les enjeux culturels du numérique avec un diaporama en langage descriptif</p>
+				</section>
+
+				<section id="generalites">
+					<section>
+						<h1>Les productions du projet :</h1>
+						<ul>
+							<li>Une présentation devant la classe</li>
+							<li>Un diaporama pour appuyer la présentation</li>
+						</ul>
+					</section>
+
+					<section>
+						<h1> Modalités : </h1>
+						<ul>
+							<li>Date : Pendant le cours du mardi 6 novembre</li>
+							<li>Durée : 10 min par binôme</li>
+							<li>Evaluation : notée par toute la classe</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="contenu">
+					<section>
+						<h1>Contenu de la présentation :</h1>
+						<p>Culture scientifique et enjeux de société</p>
+					</section>
+
+					<section>
+						<h4>Extrait du programme :</h4>
+						<blockquote >
+						&ldquo; L'enseignement de spécialité Informatique et sciences du numérique contribue au développement d'une culture scientifique et
+technologique et permet également d'aborder des questions sociétales, éthiques, philosophiques et épistémologiques qui
+surgissent dans un monde numérique.&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2> Exemples et propositions :</h2>
+						<ul>
+							<li>Persistance de l'information</li>
+							<li>Propriété  de l'information</li>
+							<li>Apprentissage automatique et intelligence artificielle</li>
+							<li>Informatique "dans le nuage"(cloud computing)</li>
+							<li>Informatique et environnement</li>
+							<li>et d'autres exemples dans le <a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=119372">programme</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="diaporama">
+					<h1>Diaporama</h1>
+					<h2>Liste des obligations :</h2>
+					<ul>
+						<li> Codé en HTML à l'aide du framework <a href="https://github.com/hakimel/reveal.js">reveal.js</a></li>
+						<li> Création d'un thème personel </li>
+						<li> Présence d'au moins un lien et une image </li>
+					</ul>
+				</section>
+
+				<section id="notation">
+					<section>
+						<h1>Notation :</h1>
+						<p>Par le professeur et par les binômes</p>
+
+					</section>
+
+
+					<section>
+						<h4>Proposition d'une grille de notation :</h4>
+						<img data-src="grille.png">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
 </html>
